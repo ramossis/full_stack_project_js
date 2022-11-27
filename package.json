@@ -1,0 +1,23 @@
+{
+  "name": "ventas_cyberdine",
+  "version": "1.0.0",
+  "description": "Backend de Cyberdine_ventasOnline",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon src",
+    "test": "test"
+  },
+  "author": "RamosDev",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
