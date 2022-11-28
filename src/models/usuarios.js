@@ -9,6 +9,10 @@ usuarios.storeUser=async(data)=>{
     console.log(data);
     return await db.query('insert into usuario set ?',[data]);
 }
+usuarios.updateUser=async(id,data)=>{
+     console.log(data);
+     return await db.query('update usuario set ? WHERE id=?',[data,id]);
+}
 usuarios.delete=async(id)=>{
     return await db.query('delete from usuario where id=?',[id]);
 }

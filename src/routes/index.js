@@ -8,9 +8,13 @@ routes.get('/',(req,res)=>{
     res.end();
 });
 
+/** 
+ * Usuarios
+*/
 routes.get('/api/get-usuario',UsuarioController.getAll);
-
 routes.post('/api/create-usuario',UsuarioController.createUser);
-routes.delete('/api/delete-persona/:id',UsuarioController.drop);
+routes.put('/api/update-usuario/:id',UsuarioController.updateUser);
+routes.delete('/api/delete-usuario/:id',UsuarioController.drop);
+
 
 module.exports=routes;
